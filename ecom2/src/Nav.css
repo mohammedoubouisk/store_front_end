@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.free{
+    padding: 10px 30px;
+    width: 100%;
+    background: #010f1c;
+    display: flex;
+    align-items: center;
+}
+.free .icon{
+    color: #f3b123;
+    font-size: 32px;
+}
+.free p{
+    margin-left: 10px;
+    color: #f6f7f9;
+    font-size: 16px;
+    font-weight: 600;
+}
+.logo img{
+    width: 70px;
+}
+.main_header{
+    padding: 10px 40px;
+    width: 100%;
+    border-bottom: 1px solid #010f1c;
+}
+.main_header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.main_header .icon{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    align-items: center;
+}
+.main_header .container .icon .account{
+    display: flex;
+    margin-right: 30px;
+}
+.main_header .container .icon .account .user_icon{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #010f1c;
+    cursor: pointer;
+}
+.main_header .container .icon .account p{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.main_header .container .icon .second_icon{
+    display: flex;
+    align-items: center;
+}
+
+.main_header .container .icon .second_icon .link{
+    margin-right: 5px;
+    font-size: 37px;
+    cursor: pointer;
+    color: #0cc0df;
+}
+.main_header .container .icon .second_icon .link span{
+    font-size: 16px;
+    position: absolute;
+    margin-left:-26px;
+    margin-top: 14px;
+    color: rgb(18, 104, 121);
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+.header .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header .container .nav ul{
+    display: flex;
+}
+.header .container .nav ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+.header .container .nav ul li .link{
+    text-decoration: none;
+    color: #010f1c;
+    transition: 0.5s;
+}
+.header .container .nav ul li .link:hover{
+    color: #0cc0df;
+}
+.header .container .auth{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.header .container .auth button{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+
+}
+.linkh{
+    color: #0cc0df;
+    font-size: 27px ;
+    margin-right: 10px;
+}
+
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #0cc0df;
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  .menu{
+    display: block;
+  }
+
+@media screen and (max-width: 1071px){
+    .main_header .container .icon .account{
+        display: flex;
+        margin-left: 30px;
+    }
+    .account{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .header .container .nav ul{
+        display: block;
+    }
+    .header .container .nav ul li{
+        margin-bottom: 10px;
+    }
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: block;
+    }
+
+}

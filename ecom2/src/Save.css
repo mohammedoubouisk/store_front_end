@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.saves{
+    margin: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+.saves img{
+    width: 200px;
+    height: 230px;
+}
+.itemss{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.itemss h3{
+    margin-top: 15px;
+}
+.itemss h5{
+    margin-top: 15px;
+}
+.itemss .price{
+    margin-top: 15px;
+}
+
+  /* buttons icons */
+
+  .saves button {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    background: #e3edf6;
+    color: black;
+    fill: rgb(155, 153, 153);
+    padding: 0.5em 1em;
+    padding-left: 0.7em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    margin:20px auto;
+  }
+  
+  .saves button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .saves button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 33px;
+
+  }
+  
+  .saves button:hover {
+    background: #e3edf6;
+  }
+  
+  .saves button:hover .svg-wrapper {
+    transform: scale(1);
+    transition: 0.5s linear;
+  }
+  
+  .saves button:hover svg {
+    transform: translateX(1em) scale(1);
+    fill: #fd384f;
+  }
+  
+  .saves button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  
+ .saves  button:active {
+    transform: scale(0.95);
+  }
+  
+  

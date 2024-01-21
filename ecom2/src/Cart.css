@@ -1,0 +1,304 @@
+.cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    border-top: 1px solid rgb(212, 212, 212);
+    padding: 10px;
+}
+
+
+.cartItems img{
+    width: 50px;
+}
+.cartItems h3{
+ width: 20%;
+}
+.cartItems p{
+    width: 10%;
+   }
+
+.cartItems button{
+    border: none;
+    color: #fd384f;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.5s;
+    padding: 8px  10px 2px 10px;
+    border-radius: 50px;
+}
+.cartItems button:hover{
+    background-color: #fd384f;
+    color: rgb(239, 238, 238);
+}
+
+/* information baout shipping */
+
+.freeship{
+    display: flex;
+    margin: 100px 0px;
+ 
+    padding: 20px;
+    align-items: flex-start;
+}
+.freeship .cartitems-total h1{
+    margin-bottom: -11px;
+}
+.freeship .cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.freeship .cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+
+}
+.freeship .cartitems-total button{
+    width: 100%;
+    height: 58px;
+    outline: none;
+    border: none;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.freeship .cartitems-total hr{
+    height: 5px;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    border-radius: 1px;
+    margin: 5px 0px;
+
+}
+
+/* BUTTON STYLE */
+
+/* buttons *********************************  */
+.freeship .cont{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+@-webkit-keyframes {
+}
+@-webkit-keyframes extend {
+    0% {
+
+        border-radius: 100px;
+        } 10% {
+
+        background: #fff;
+
+        } 20% {
+
+        background: forestgreen;
+        } 100% {
+        border-radius: 100px;
+        background: forestgreen;
+        }
+    }
+@keyframes extend {
+    0% {
+
+        border-radius: 100px;
+        } 10% {
+
+        background: #fff;
+        } 20% {
+  
+        background: forestgreen;
+        } 100% {
+
+        border-radius: 100px;
+        background: forestgreen;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+html {
+    background: #fff
+    }
+
+
+    .freeship .cont button {
+        border-width: 1px;
+        padding: 20px 160px;
+        text-align: center;
+        border-radius: 5px;
+        background: #fff;
+        position: relative;
+        border: none;
+        font-weight: bold;
+        background-color: #fd384f;
+        color: white;
+        cursor: pointer;
+        }
+    .freeship .cont button > span {
+    font-size: 20px;
+    color: white;
+    background-color: #fd384f;
+
+    
+    }
+
+    .freeship .cont img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+    }
+
+    .freeship .cont button:focus {
+    /*animation*/
+    -webkit-animation: extend 1s ease-in-out;
+    -ms-animation: extend 1s ease-in-out;
+    animation: extend 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+    .freeship .cont button:focus > span {
+    /*animation*/
+    -webkit-animation: disappear 1s ease-in-out;
+    -ms-animation: disappear 1s ease-in-out;
+    animation: disappear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+    .freeship .cont button:focus > img {
+    /*animation*/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+
+
+
+
+  @keyframes anima {
+    0%,
+    100%{
+        transform: translateY(1%);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+  }
+
+  
+@media screen and (max-width: 1071px){
+    .cartItems{
+        display: block;
+       width: 100%;
+       text-align: center;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(212, 212, 212);
+        border-top: 1px solid rgb(212, 212, 212);
+        padding: 10px;
+    }
+    .cartItems img{
+        width: 70px;
+    }
+    .cartItems h3{
+     width: 90%;
+     margin:20px auto;
+
+    }
+    .cartItems p{
+        width: 100%;
+       }
+    
+    .cartItems button{
+        border: none;
+        color: #fd384f;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.5s;
+        padding: 8px  10px 2px 10px;
+        border-radius: 50px;
+        margin: 15px 0px;
+    }
+    .freeship{
+        width: 100%;
+        display: flex;
+        margin: 100px 0px;
+     
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .freeship .cartitems-total{
+        width: 10%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .freeship .cont button span{
+        text-align: center;
+        margin-left: -25px;
+        
+        }
+        
+}

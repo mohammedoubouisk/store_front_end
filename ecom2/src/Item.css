@@ -1,0 +1,85 @@
+.products img{
+    width: 200px;
+    height: 230px;
+}
+.products .disc h3{
+    max-width: 300px;
+    line-height: 30px;
+    color: rgb(70, 67, 67);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.products{
+    margin: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+}
+.products p{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ff0000;
+}
+.products hr{
+    margin-top: 10px;
+}
+.pr{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* style hover for images buy now like view */
+
+
+.products .icons{
+    position: absolute;
+    margin-left: 240px;
+    font-size: 20px;
+    display: none;
+    transition: transform 0.9s ease-in-out;
+
+    
+    
+}
+.products .icons li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #000;
+}
+.products:hover .icons{
+    display: block;
+    transition: 0.5s;
+    
+    
+}
+.products .icons li:hover{
+    background-color: #0cc0df;
+    color: white;
+    border: 1px solid #0cc0df;
+}
+
+@media screen and (max-width: 1071px){
+    .products{
+        margin: 20px 0px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 300px;
+        flex-wrap: wrap;
+        align-items: center;
+        height: fit-content;
+        padding: 20px;
+    }
+    
+}

@@ -1,0 +1,206 @@
+.all{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.promo {
+display: flex;
+background-color: black;
+color: white;
+padding: 20px;
+align-items: center;
+margin-bottom: 20px;
+}
+.promo .two img{
+ height: 300px;
+ width: 550px;
+
+ margin-right: 40px;
+ padding: 5px;
+}
+.promo .one{
+    width: 100%;
+    margin-left: 20px;
+}
+.promo .one h2{
+    font-size: 30px;
+}
+.promo .one p{
+    margin-top: 10px;
+}
+.promo .one button{
+    margin-top: 20px;
+    padding:10px 15px 10px 20px ;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    border: none;
+}
+.link{
+    text-decoration: none;
+}
+
+
+/* Add any other styles you need for the .one class */
+
+.prx{
+    color: rgb(246, 23, 100);
+    font-size: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.one button img{
+    border-radius: 50%;
+    width: 50px;
+   
+    margin-right: 10px;
+}
+.one h2{
+    display: flex;
+    align-items: center;
+}
+
+/* search button  about product*/
+.search_box input{
+    outline: none;
+    padding: 10px 30px;
+    border: 3px solid #0cc0df;
+    width: 300px;
+    color: #ecf2f7;
+    color: rgb(32, 32, 32);
+    border-right: none;
+}
+.search_box button{
+    border: 3px solid #0cc0df;
+    border-left: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #0cc0df;
+    color: #ecf2f7;
+    
+}
+.search_box{
+    align-items: center;
+    text-align: center  ;
+    margin-bottom: 20px;
+}
+/* catehorys */
+
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.category p{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.category p:hover{
+    color: #0cc0df;
+    background-color: transparent;
+}
+.category button{
+    background-color: transparent;
+    border: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.all img{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    widows: 230px;
+    margin: auto;
+}
+.all img:hover{
+    /* animation: anima 2s; */
+}
+.all .loading{
+    width: 200px;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+/* @keyframes anima {
+    0%,
+    100%{
+        transform: translateY(1%);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+  } */
+
+  @media screen and (max-width: 1071px){
+    .promo {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+        .prx{
+            color: rgb(246, 23, 100);
+            font-size: 50px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .promo .two img{
+            height: 200px;
+            width: 370px;
+            margin-right: 40px;
+            padding: 5px;
+            margin-top: 50px;
+            display: none;
+
+           }
+           .one h2{
+            margin-top: 5px;
+            display: block;
+            border: 1px solid rgb(246, 23, 100);
+            width: fit-content;
+            padding: 10px;
+            
+        }
+        .category{
+            flex-wrap: wrap;
+            border: 1px solid #0cc0df;
+            margin-bottom: 50px;
+        }
+        .all{
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .search_box input{
+            outline: none;
+            padding: 10px 20px;
+            border: 3px solid #0cc0df;
+            width: 200px;
+            color: #ecf2f7;
+            color: rgb(32, 32, 32);
+            border-right: none;
+        }
+        
+
+  }

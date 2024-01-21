@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.view{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.view .pict img {
+    width: 400px;
+    animation: anima 2s ease-in-out infinite;
+    transition: transform 1s ease-in-out; 
+}
+
+.view .pict:hover img {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.view .star{
+    color: rgb(238, 206, 0);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.view .quatite{
+    display: flex;
+}
+.view .wasf{
+    width: 500px;
+}
+.dicription{
+    max-width: 500px;
+}
+.dicription h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.dicription .prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dicription .prices .newp{
+    margin-left: 60px;
+}
+.dicription .wasf p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.sizes {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.color {
+    color: #333;
+    font-weight: bold;
+}
+
+.size select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Style the select dropdown */
+.size select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(61, 84, 95);
+    font-size: 15px;
+    font-weight:bold
+}
+
+/* Style the category */
+.sizes p:last-child {
+    margin-top: 10px;
+}
+
+/* Optional: Add some hover effect */
+.sizes:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.sizes p{
+    margin-bottom: 20px;
+}
+.dicription .quatite{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+
+    align-items: center;
+    margin-top: 35px;
+}
+.dicription .quatite .number{
+    margin-left:40px;
+    margin-right: 40px;
+}
+.dicription .quatite .plus{
+    background-color: rgb(234, 234, 235);
+    padding: 10px 20px;
+    border-radius: 60%;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    user-select: none;
+}
+.dicription .quatite .plus:hover{
+    background-color: #f3b123;
+    color: white;
+    user-select: none;
+}
+
+/* buttons *********************************  */
+.cont{
+    text-align: center;
+    margin-top: 30px;
+}
+.cont button{
+    text-align: center;
+    align-items: center;
+    padding: 15px 100px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #f3b123;
+    font-weight: bold;
+    background-color: #f3b123;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s    ;
+}
+.cont button:hover{
+    background-color: white;
+    border:  1px solid #f3b123;
+    color: #f3b123;
+}
+
+  /* css style  */
+  
+.cartitems-total {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitems-total h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;flex-direction: column;
+    width: 250px;
+    margin:0px 14%;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.hr{
+    height: 5px;
+    border: none;
+    background-color: #ddd;
+}
+.qnt{
+    font-size: 20px;
+    margin-right: 70px;
+}
+@media screen and (max-width: 1071px){
+    .view{
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+    }
+    .view .pict img {
+        width: 300px;
+    }
+    .view .pict{
+        margin-bottom: 20px;
+    }
+    .dicription .wasf p{
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .dicription .wasf{
+        max-width: 100%;
+       display: flex;
+       justify-content: center;
+
+    }
+    .cartitems-total-item{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 10px;
+    }
+    .dicription .quatite{
+        display: block;
+    }
+    .qnt{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .cont button{
+          border-radius: 0px;
+    }
+    
+        
+}

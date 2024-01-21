@@ -1,0 +1,115 @@
+.promotion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around  ;
+    text-align: center;
+    margin-top: 40px;
+}
+/* .ads img{
+    background-size: cover;
+    width: 10px;
+    height: 40vh;
+} */
+.ads{
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+margin-top: 100px;
+margin-bottom: 50px;
+}
+
+/* slider csss  style swiiiiiper*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    background-size: cover;
+    width: 60%;
+    height: 60vh;
+
+  }
+  .one{
+    width: 50%;
+  }
+  .two{
+    width: 40%;
+  }
+  .two p{
+    margin-top: 20px;
+  }
+  .two h2{
+    margin-top: 20px;
+  }
+  
+  .animated-text {
+    color: #f3b123;
+    background-color: red;
+  
+    /* Create the gradient. */
+    background: linear-gradient(90deg, rgba(78,239,255,1) 0%, rgba(254,28,28,1) 34%, rgba(252,160,31,0.9893207282913166) 100%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .two h3{
+    margin-top: 20px;
+    color: #f3b123;
+    font-size: 24px;
+  }
+  .one span{
+    display: none;
+  }
+  
+  @media screen and (max-width: 1071px){
+    .ads{
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      }
+      .one{
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .two{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+      }
+  }
+  

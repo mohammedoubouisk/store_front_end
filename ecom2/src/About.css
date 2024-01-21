@@ -1,0 +1,81 @@
+.cart img{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: -50px;
+}
+.cart{
+    width: 20%;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    border-radius: 20px;
+}
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+.card .cart h4,p{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.df{
+    margin-bottom: 60px;
+    margin-left: 60px;
+
+}
+
+.titles-gros{
+    font-weight: bold;
+    color: rgb(7, 66, 92);
+    margin-top: 50px;
+}
+.ligne{
+    height: 3px;
+    border: none;
+    outline: none;
+    background-color: rgb(209, 209, 209);
+    width: 95%;
+    margin-top: 5px;
+}
+.header-part h1{
+    text-align: center;
+    margin: 20px 0px;
+    text-shadow: 1PX 1PX 1PX  #0cc0df;
+}
+.header-part h5{
+    margin-left: 60px;
+    letter-spacing: 1px;
+}
+.header-part .text{
+    width: 90%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1071px){
+
+    .cart{
+        width: 90%;
+        margin: 80px auto 0px auto;
+        text-align: center;
+        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+        border-radius: 20px;
+    }
+    .card{
+        display: block;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    
+    }
+        
+}
